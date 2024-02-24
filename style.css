@@ -1,0 +1,104 @@
+body {
+    line-height: 2;
+    margin: 0;
+}
+
+/* Font Links in CSS(Cascading Style Sheets) */
+@font-face {
+    font-family: Regular;
+    src: url('FONTS/OpenSans-Regular.ttf');
+}
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    overflow: hidden;
+    background-color: #D3153C;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {
+    float: left;
+    list-style: none;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+    list-style: none;
+}
+
+ul.topnav li a {
+    display: block;
+    color: #ededed;
+    padding: 14px;
+    min-height: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Regular;
+}
+
+ul.topnav li a:hover {
+    color: lightblue;
+    transition-duration: 1;
+}
+
+#dropdownIcon {
+    display: none;
+}
+/* Mobile Stylings */
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)){
+        display: none
+    }
+    #dropdownIcon {
+        display: block;
+    }
+}
+
+.poster {
+    float: left;
+    margin-right: 70px;
+    width: 32%;
+}
+
+div.content {
+    margin-top: 30%;
+    float: right;
+}
+
+h1.header1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+div.text {
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+button.btn1 {
+    background-color: #D3153C;
+    font-family: sans-serif;
+    font-size: 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 13px;
+    margin-left: 25%;
+}
+
+button.btn1 a {
+    text-decoration: none;
+    color: #ededed;
+}
+
+button.btn1:hover {
+    background-color: #00abf0;
+    transition-duration: 1s;
+}
